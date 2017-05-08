@@ -1,0 +1,29 @@
+<html>
+<head>
+	<center>
+		<title>OPL Final Project</title>
+	</center>
+	<style>
+		back   {background-color: black;}
+		header {color:     red;
+				font-size: 300%}
+		state  {color:     blue;
+				font-size: 130%}
+	</style>
+</head>
+
+<body>
+	<center>
+		<header> Welcome to the voting infomation booth! </header>
+		<p style=font-size:130%> Please enter a state name </p>
+		<input type="text" id="TEXTBOX" style="width:400px;height:30px;font-size:130%">
+	</center>
+	
+	<script>
+		function checkStateName(){
+			var textbox = document.getElementById('TEXTBOX');
+			var info    = textbox.value;
+		}
+	</script>
+</body>
+</html>
