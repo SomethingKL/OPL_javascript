@@ -36,8 +36,6 @@
 			<li><button onclick="checkStateName()">Go To Voter Site</button></li>
 		</ul>	
 	</state>
-
-	
 	
 	<img src="IVoted.jpg" alt="I Voted" style="width:400px;height:400px;">
 	
@@ -47,6 +45,14 @@
 		function checkStateName(){
 			var textbox = document.getElementById('TEXTBOX');
 			var info    = textbox.value;
+			switch (info){
+				case "Washington":
+					document.getElementById("printHere").innerHTML = info;
+					break;
+				default:
+					document.getElementById("printHere").innerHTML = "Please Enter a state";
+
+			}
 		}
 	</script>
 </body>
