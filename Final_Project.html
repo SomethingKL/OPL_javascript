@@ -37,10 +37,29 @@
 			var info    = textbox.value;
 			switch (info){
 				case "Washington":
-					document.getElementById("printHere").innerHTML = info;
+					window.location = "https://www.sos.wa.gov/elections/"
 					break;
+				case "Oregon":
+					window.location = "http://sos.oregon.gov/voting-elections/Pages/default.aspx"
+					break;
+				case "California":
+					window.location = "http://voterguide.sos.ca.gov/"
+					break;
+				case "Hawaii":
+					window.location = "http://elections.hawaii.gov/"
+					break;
+				case "Alaska":
+					window.location = "http://www.elections.alaska.gov/"
+					break;
+				case "Idaho":
+					window.location = "http://www.idahovotes.gov/"
+					break;
+				case "Montana":
+					window.location = " https://sos.mt.gov/elections/vote/index"
+					break;
+
 				default:
-					document.getElementById("printHere").innerHTML = "Please Enter a state";
+					document.getElementById("printHere").innerHTML = "Please Enter a valid state";
 
 			}
 		}
