@@ -39,15 +39,15 @@
 				<option value= "No">No </option>
 			</select>
 			<li>Are You a Convicted Felon:</li>
-			<select id=felon>
+			<select id=con>
 				<option value= "Yes">Yes </option>
 				<option value= "No">No </option>
 			</select>
 			<li>Enter your age:</li>
-			<li><input type="age" id="age" style="width:400px;height:30px;font-size:100%"></li>
+			<li><input type="age" id="age" style="width:300px;"></li>
 			<li><button onclick="checkEligibility()">Check Eligibility</button></li>
 			<li>Please enter a state name</li>
-			<li><input type="text" id="TEXTBOX" style="width:400px;height:30px;"></li>
+			<li><input type="text" id="TEXTBOX" style="width:300px;"></li>
 			<li><button onclick="checkStateName()">Go To Voter Site</button></li>
 		</ul>
 	</state>
@@ -55,36 +55,11 @@
 	<footer> A BakerBrandt Production </footer>
 	
 	<script>
-		function checkStateName(){
-			var textbox = document.getElementById('');
-			var info    = textbox.value;
-			switch (info){
-				case "Washington":
-					window.location = "https://www.sos.wa.gov/elections/"
-					break;
-				case "Oregon":
-					window.location = "http://sos.oregon.gov/voting-elections/Pages/default.aspx"
-					break;
-				case "California":
-					window.location = "http://voterguide.sos.ca.gov/"
-					break;
-				case "Hawaii":
-					window.location = "http://elections.hawaii.gov/"
-					break;
-				case "Alaska":
-					window.location = "http://www.elections.alaska.gov/"
-					break;
-				case "Idaho":
-					window.location = "http://www.idahovotes.gov/"
-					break;
-				case "Montana":
-					window.location = " https://sos.mt.gov/elections/vote/index"
-					break;
-
-				default:
-					alert("Please Enter a valid state");
-
-			}
+		function checkEligibility(){
+			var res   = document.getElementById('res');
+			var residency = textbox.value;
+			var con   = document.getElementById('con');
+			var convict   = textbox.value;
 		}
 		function checkStateName(){
 			var textbox = document.getElementById('TEXTBOX');
