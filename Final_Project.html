@@ -13,7 +13,7 @@
 		state{
 			float:      right;
 			padding:    1em;
-			margin-right: 30;
+			margin-left: 30;
 			color:      red;
 			font-size:  130%
 		}
@@ -28,6 +28,8 @@
 	<header> 
 		<h1> Welcome to the voting infomation booth! </h1>
 	</header>
+	
+	<img src="IVoted.jpg" alt="I Voted" style="width:400px;height:400px;">
 	
 	<state> 
 		<ul>
@@ -44,12 +46,10 @@
 			<li>Enter your age:</li>
 			<li><input type="age" id="age" style="width:400px;height:30px;font-size:100%"></li>
 			<li>Please enter a state name</li>
-			<li><input type="text" id="TEXTBOX" style="width:400px;height:30px;font-size:100%"></li>
+			<li><input type="text" id="TEXTBOX" style="width:400px;height:30px;"></li>
 			<li><button onclick="checkStateName()">Go To Voter Site</button></li>
 		</ul>	
 	</state>
-	
-	<img src="IVoted.jpg" alt="I Voted" style="width:400px;height:400px;">
 	
 	<footer> A BakerBrandt Production </footer>
 	
@@ -81,7 +81,7 @@
 					break;
 
 				default:
-					document.getElementById("printHere").innerHTML = "Please Enter a valid state";
+					alert("Please Enter a valid state");
 
 			}
 		}
