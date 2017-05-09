@@ -34,17 +34,18 @@
 	<state> 
 		<ul>
 			<li>Are You a Resident of the US:</li>
-			<select>
+			<select id=res>
 				<option value= "Yes">Yes </option>
 				<option value= "No">No </option>
 			</select>
 			<li>Are You a Convicted Felon:</li>
-			<select>
+			<select id=felon>
 				<option value= "Yes">Yes </option>
 				<option value= "No">No </option>
 			</select>
 			<li>Enter your age:</li>
 			<li><input type="age" id="age" style="width:400px;height:30px;font-size:100%"></li>
+			<li><button onclick="checkEligibility()">Check Eligibility</button></li>
 			<li>Please enter a state name</li>
 			<li><input type="text" id="TEXTBOX" style="width:400px;height:30px;"></li>
 			<li><button onclick="checkStateName()">Go To Voter Site</button></li>
