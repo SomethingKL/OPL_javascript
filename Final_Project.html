@@ -17,6 +17,10 @@
 			color:      red;
 			font-size:  130%
 		}
+		state ul{
+			list-style-type: none;
+			padding 1;
+		}
 	</style>
 </head>
 
@@ -27,16 +31,60 @@
 	
 	<img src="IVoted.jpg" alt="I Voted" style="width:400px;height:400px;">
 	
-	<state> 
-		<li> </li>
-		<li>Please enter a state name</li>
-		<li><input type="text" id="TEXTBOX" style="width:400px;height:30px;"></li>
-		<li><button onclick="checkStateName()">Go To Voter Site</button></li>	
+	<state>
+		<ul>
+			<li>Are You a Resident of the US:</li>
+			<select>
+				<option value= "Yes">Yes </option>
+				<option value= "No">No </option>
+			</select>
+			<li>Are You a Convicted Felon:</li>
+			<select>
+				<option value= "Yes">Yes </option>
+				<option value= "No">No </option>
+			</select>
+			<li>Enter your age:</li>
+			<li><input type="age" id="age" style="width:400px;height:30px;font-size:100%"></li>
+			<li>Please enter a state name</li>
+			<li><input type="text" id="TEXTBOX" style="width:400px;height:30px;"></li>
+			<li><button onclick="checkStateName()">Go To Voter Site</button></li>
+		</ul>
 	</state>
 	
 	<footer> A BakerBrandt Production </footer>
 	
 	<script>
+		function checkStateName(){
+			var textbox = document.getElementById('');
+			var info    = textbox.value;
+			switch (info){
+				case "Washington":
+					window.location = "https://www.sos.wa.gov/elections/"
+					break;
+				case "Oregon":
+					window.location = "http://sos.oregon.gov/voting-elections/Pages/default.aspx"
+					break;
+				case "California":
+					window.location = "http://voterguide.sos.ca.gov/"
+					break;
+				case "Hawaii":
+					window.location = "http://elections.hawaii.gov/"
+					break;
+				case "Alaska":
+					window.location = "http://www.elections.alaska.gov/"
+					break;
+				case "Idaho":
+					window.location = "http://www.idahovotes.gov/"
+					break;
+				case "Montana":
+					window.location = " https://sos.mt.gov/elections/vote/index"
+					break;
+
+				default:
+					alert("Please Enter a valid state");
+
+			}
+		}
 		function checkStateName(){
 			var textbox = document.getElementById('TEXTBOX');
 			var info    = textbox.value;
