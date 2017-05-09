@@ -33,6 +33,7 @@
 	
 	<state> 
 		<ul>
+			<li> </li>
 			<li>Please enter a state name</li>
 			<li><input type="text" id="TEXTBOX" style="width:400px;height:30px;font-size:100%"></li>
 			<li><button onclick="checkStateName()">Go To Voter Site</button></li>
@@ -69,7 +70,7 @@
 					break;
 
 				default:
-					document.getElementById("printHere").innerHTML = "Please Enter a valid state";
+					alert("Please Enter a valid state");
 
 			}
 		}
