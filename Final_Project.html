@@ -5,31 +5,41 @@
 	</center>
 	<style>
 		header,footer{
-			padding:   1em;
-			color:     white;
+			padding:    1em;
+			text-align: center;
+			color:      white;
 			background-color: blue;
 		}
 		state{
-			color:     blue;
-			font-size: 130%
+			float:      right;
+			padding:    1em;
+			margin-right: 30;
+			color:      red;
+			font-size:  130%
+		}
+		state ul{
+			list-style-type: none;
+			padding: 0;
 		}
 	</style>
 </head>
 
 <body>
-	<center>
-		<header> 
-			<h1> Welcome to the voting infomation booth! </h1>
-		</header>
-		
-		<state> Please enter a state name </state>
-		<input type="text" id="TEXTBOX" style="width:400px;height:30px;font-size:100%">
-		<p id="printHere"></p>
-
-		<button onclick="checkStateName()">Go To Voter Site</button>
-		
-		<footer> Gonzaga CS project </footer>
-	</center>
+	<header> 
+		<h1> Welcome to the voting infomation booth! </h1>
+	</header>
+	
+	<state> 
+		<ul>
+			<li>Please enter a state name</li>
+			<li><input type="text" id="TEXTBOX" style="width:400px;height:30px;font-size:100%"></li>
+			<li><button onclick="checkStateName()">Go To Voter Site</button></li>
+		</ul>	
+	</state>
+	
+	<img src="IVoted.jpg" alt="I Voted" style="width:400px;height:400px;">
+	
+	<footer> Gonzaga CS project </footer>
 	
 	<script>
 		function checkStateName(){
@@ -64,9 +74,5 @@
 			}
 		}
 	</script>
-
-	<center>
-		<img src="IVoted.jpg" alt="I Voted" style="width:400px;height:400px;">
-	</center>
 </body>
 </html>
